@@ -14,7 +14,11 @@ $usuarios = $usuarios ?? []
 
         <tbody>
             <?php if(!empty($usuarios)) : ?>
-                
+                <?php foreach ($usuarios as $user) : ?>
+                    <td> <?= htmlspecialchars($user['id']) ?> </td>
+                    <td> <?= htmlspecialchars($user['nome']) ?> </td>
+                    <td> <?= htmlspecialchars($user['email']) ?> </td>
+                <?php endforeach; ?>
             <?php else: ?>
                 <td>Não há usuários cadastrados</td>
             <?php endif; ?>

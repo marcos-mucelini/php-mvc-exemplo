@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioControlador extends Controlador{
+class UsuariosControlador extends Controlador{
 
     public function listar(){
         $modeloUsuario = new Usuarios(); 
