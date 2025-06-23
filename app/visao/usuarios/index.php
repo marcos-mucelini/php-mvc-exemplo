@@ -2,10 +2,19 @@
 $usuarios = $usuarios ?? []
 ?>
 
-<div>
-    <h1>Lista de usuários</h1>
+<div class="overflow-x-auto">
 
-    <table>
+    <div>
+        <h1>Lista de usuários</h1>
+        <button 
+            class="btn btn-primary" 
+            onclick="window.location.href='/PHP-MVC/index.php?controlador=usuarios&acao=criar'"
+        >
+                Cadatrar
+        </button>
+    </div>
+
+    <table class="table">
         <thead>
             <td>ID</td>
             <td>Nome</td>

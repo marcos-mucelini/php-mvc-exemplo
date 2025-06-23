@@ -4,7 +4,7 @@ class Modelo {
 
     protected $bd;
 
-    public function __contruct(){
+    public function __construct(){
 
         $this->bd = BancoDeDados::obtemConexao();
     }

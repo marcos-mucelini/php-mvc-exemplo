@@ -16,5 +16,5 @@ if (class_exists($controlador) && method_exists($controlador, $acao)) {
     $ctrl = new $controlador();
     $ctrl->$acao();
 } else {
-
+    require __DIR__.'/public/404.php';
 }
