@@ -10,9 +10,10 @@ class UsuariosControlador extends Controlador{
     }
 
     public function criar(){
+        echo $_SERVER['REQUEST_METHOD'];
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             $modeloUsuarios = new Usuarios();
-            $modeloUsuarios->criarUsuario($_POST);
+            $modeloUsuarios->criarUsuarios($_POST);
 
             session_start();
             $_SESSION['flash_message'] = "Usuário cadastrado com sucesso!";

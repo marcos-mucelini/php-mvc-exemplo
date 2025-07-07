@@ -9,7 +9,14 @@ class Usuarios extends Modelo {
     }
 
     public function criarUsuarios($informacoes){
-        $stmt = $this->bd->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
-        
+        $stmt = $this->bd->prepare(
+            "INSERT INTO usuarios (nome, email, password) VALUES (?, ?, ?)"
+        );
+
+        $stmt->execute([
+            $informacoes['nome'],
+            $informacoes['email'],
+            $informacoes['senha']
+        ]);
     }
 }
