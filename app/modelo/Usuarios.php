@@ -7,4 +7,9 @@ class Usuarios extends Modelo {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function criarUsuarios($informacoes){
+        $stmt = $this->bd->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
+        
+    }
 }
