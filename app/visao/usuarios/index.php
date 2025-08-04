@@ -16,17 +16,19 @@ $usuarios = $usuarios ?? []
 
     <table class="table">
         <thead>
-            <td>ID</td>
-            <td>Nome</td>
-            <td>E-mail</td>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
         </thead>
 
         <tbody>
             <?php if(!empty($usuarios)) : ?>
                 <?php foreach ($usuarios as $user) : ?>
-                    <td> <?= htmlspecialchars($user['id']) ?> </td>
-                    <td> <?= htmlspecialchars($user['nome']) ?> </td>
-                    <td> <?= htmlspecialchars($user['email']) ?> </td>
+                    <tr>
+                        <td> <?= htmlspecialchars($user['id']) ?> </td>
+                        <td> <?= htmlspecialchars($user['nome']) ?> </td>
+                        <td> <?= htmlspecialchars($user['email']) ?> </td>
+                    </tr>
                 <?php endforeach; ?>
             <?php else: ?>
                 <td>Não há usuários cadastrados</td>

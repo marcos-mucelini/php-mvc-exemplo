@@ -48,9 +48,9 @@ Este projeto demonstra um simples **cadastro de usuário** utilizando o padrão 
 CREATE DATABASE meubanco;
 USE meubanco;
 
-CREATE TABLE users (
+CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100),
+  nome VARCHAR(100),
   email VARCHAR(100),
   password VARCHAR(255)
 );
