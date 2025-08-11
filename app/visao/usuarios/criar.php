@@ -1,3 +1,16 @@
+<!-- 
+/**
+ * ----------------------------------------------------------------------------
+ * View de Cadastro de Usuário
+ * ----------------------------------------------------------------------------
+ *
+ * Esta página exibe o formulário para criar um novo usuário no sistema.
+ * O formulário envia os dados via POST para o mesmo endpoint que está
+ * responsável por tratar o cadastro no UserController.
+ *
+ * Utiliza classes do Tailwind CSS para estilização simples e responsiva.
+ */
+-->
 <div>
     <h1>Cadastro de Usuários</h1>
 

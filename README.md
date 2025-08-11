@@ -17,14 +17,16 @@ Este projeto demonstra um simples **cadastro de usuário** utilizando o padrão 
 ```
 /meu-projeto
 ├── /app
-│ ├── /controllers
-│ │ └── UserController.php # Controlador de usuários
-│ ├── /models
-│ │ └── User.php # Modelo de usuários (acesso ao banco)
-│ ├── /views
-│ │ ├── /user
-│ │ │ └── create.php # Página de cadastro
-│ │ └── layout.php # Layout base
+│ ├── /controlador
+│ │ └── UsuariosControlador.php # Controlador de usuários
+│ ├── /modelo
+│ │ └── Usuarios.php # Modelo de usuários (acesso ao banco)
+│ ├── /visao
+│ │ ├── /usuarios
+│ │ │ └── criar.php   # Página de cadastro
+│ │ │ └── editar.php  # Página de edição
+│ │ │ └── index.php   # Página de listagem
+│ │ └── layout.php  # Layout base
 ├── /public
 │ ├── 404.php     # Página de item URL inválida
 │ └── layout.php  # Layout base
@@ -71,5 +73,7 @@ self::$instance = new PDO('mysql:host=localhost;dbname=meubanco', 'root', '');
 - **MySQL**
 
 - **TailwindCSS**
+
+- **DaisyUI**
 
 - **HTML e CSS básico**
